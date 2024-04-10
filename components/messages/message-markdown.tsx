@@ -10,7 +10,7 @@ interface MessageMarkdownProps {
   content: string
 }
 
-// TODO is url safe?
+// TODO ifame url safe check
 export const MessageMarkdown: FC<MessageMarkdownProps> = ({ content }) => {
   return (
     <MessageMarkdownMemoized

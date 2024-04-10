@@ -102,6 +102,9 @@ export const ChatMessages: FC<ChatMessagesProps> = ({}) => {
           self.findIndex(item => item.id === chatFileItem.id) === _
       )
 
+      // TODO add message annotation(type, config, status, etc.)
+      // TODO watch SSE if message.type is job config or job status
+
       return (
         <Message
           key={chatMessage.message.sequence_number}
